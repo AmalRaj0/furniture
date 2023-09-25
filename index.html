@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jost:wght@300&family=Lora:ital,wght@1,600;1,700&family=Mooli&family=Roboto+Slab:wght@100;300;500;700&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="font-family: 'Jost', sans-serif;">
+  <!-- header -->
+  <header>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <div class="container-fluid justify-content-between">
+        <!-- Left elements -->
+        <div class="d-flex">
+          <!-- Brand -->
+          <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+            <h4 class="mt-2">FURNITURE.COM</h4>
+          </a>
+
+          <!-- Search form -->
+          <form class="input-group w-auto my-auto d-none d-sm-flex">
+            <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search"
+              style="min-width: 125px;" />
+            <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+          </form>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <ul class="navbar-nav flex-row d-none d-md-flex">
+          <li class="nav-item me-3 me-lg-1 active">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-home fa-lg"></i></span>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+          </li>
+
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-flag fa-lg"></i></span>
+            </a>
+          </li>
+
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-video fa-lg"></i></span>
+            </a>
+          </li>
+
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-shopping-bag fa-lg"></i></span>
+            </a>
+          </li>
+
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-users fa-lg"></i></span>
+              <span class="badge rounded-pill badge-notification bg-danger">2</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle" height="22"
+                alt="Black and White Portrait of a Man" loading="lazy" />
+              <strong class="d-none d-sm-block ms-1">Amal raj</strong>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <span><i class="fas fa-plus-circle fa-lg"></i></span>
+            </a>
+          </li>
+          <li class="nav-item dropdown me-3 me-lg-1">
+            <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-comments fa-lg"></i>
+
+              <span class="badge rounded-pill badge-notification bg-danger">6</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown me-3 me-lg-1">
+            <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bell fa-lg"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">12</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown me-3 me-lg-1">
+            <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-chevron-circle-down fa-lg"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Right elements -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+  </header>
+  <!-- banner-->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img
+          src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?cs=srgb&dl=pexels-martin-p%C3%A9chy-1866149.jpg&fm=jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129805.jpg?w=2000"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://spacewood.in/wp-content/uploads/2017/08/ripple-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+  <!-- cards -->
+  <div class="row mt-5 p-5 ms-5 me-3 ">
+    <div class="col-4">
+      <div class="card ms-5 shadow text-center" style="width: 18rem; height:450px  ;">
+        <img
+          src="https://static.asianpaints.com/content/dam/asian_paints/blog/wood/benefits-of-wooden-furniture/image-1-asian-paints-m.jpeg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LIVING</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-danger">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card ms-5 shadow text-center" style="width: 18rem; height:450px ;">
+        <img
+          src="https://static.asianpaints.com/content/dam/asian_paints/blog/wood/benefits-of-wooden-furniture/image-2-asian-paints-m.jpeg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DINING</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-danger">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card ms-5 shadow text-center" style="width: 18rem; height:450px ;">
+        <img height="250px"
+          src="https://assets-a1.kompasiana.com/items/album/2023/03/19/1658712339816661-0-6416821608a8b51e7f50ad22.png?t=o&v=410"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BEDROOM</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-danger">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OUR COLLECTIONS -->
+  <section>
+    <h1 class="text-secondary text-center mb-5">OUR COLLECTIONS</h1>
+    <div class="row ms-5 mb-5">
+      <div  class="col-2 text-center fw-bold fs-5  ">
+      <img src="https://damroimages.blob.core.windows.net/damroimages/Sofa2.svg" alt="">
+        <p class="text-secondary">Sofas</p>
+      </div>
+      <div class="col-2 text-center fw-bold fs-5">
+        <img src="https://damroimages.blob.core.windows.net/damroimages/Recliner2.svg" alt="">
+        <p class="text-secondary">Recliners</p>
+      </div>
+      <div class="col-2 text-center fw-bold fs-5">
+        <img src="https://damroimages.blob.core.windows.net/damroimages/Beds2.svg" alt="">
+        <p class="text-secondary">Bedrooms</p>
+      </div>
+      <div class="col-2 text-center fw-bold fs-5">
+        <img src="https://damroimages.blob.core.windows.net/damroimages/Dining.svg" alt="">
+        <p class="text-secondary">Dinings</p>
+      </div>
+      <div  class="col-2 text-center fw-bold fs-5">
+        <img src="https://damroimages.blob.core.windows.net/damroimages/Office.svg" alt="">
+        <p class="text-secondary">Office Furnitures</p>
+      </div>
+      <div  class="col-2 text-center fw-bold fs-5">
+        <img src="https://damroimages.blob.core.windows.net/damroimages/chairs_1648216789586.png" alt="">
+        <p class="text-secondary">Living</p>
+      </div>
+    </div>
+    <div id="carouselExample" class="carousel slide ">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://damroimages.blob.core.windows.net/damroimages/01%20Sofa.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://damroimages.blob.core.windows.net/damroimages/02%20Recliners.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img  src="https://damroimages.blob.core.windows.net/damroimages/5_our_collection_dining.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- shop by room -->
+  <section>
+    <div class="text-center fs-5 mt-5 ">
+      <p class="fw-bold">Shop by Room </p>
+      <p class="fw-bold">Create a room you can't wait to come back to. Explore our collections that are designed and
+        curated
+        specifically keeping you in mind.</p>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1675186049302-a0dad4cf3412?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29vZCUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+            <p class="fw-bold">The Pride Room of a House</p>
+            <p>SHOP THE LIVING +</p>
+        </div>
+       
+        <div class="col-4">
+          <img height="750px" width="500px"
+            src="https://images.unsplash.com/photo-1591944173662-85fbc5a495a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvb2QlMjBmdXJuaXR1cmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+            <p class="fw-bold">Gather Together and  Build Memories</p>
+            <p>SHOP THE DINING +</p>
+        </div>
+       
+        <div class="col-4">
+          <img
+            src="https://images.unsplash.com/photo-1487015307662-6ce6210680f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29vZCUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+            <p class="fw-bold">Get Cozy</p>
+            <p>SHOP THE BEDROOM +</p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="mt-5">
+      <h1 class="text-center text-secondary mb-5 fs-1">Cities We Deliver</h1>
+   <div class="text-secondary fw-bold fs-5" id="container">
+    <ul type="none">
+      <li class="delivery">Bengaluru</li>
+      <li class="delivery">Mysore</li>
+      <li class="delivery">Hassan</li>
+      <li class="delivery">Bellary</li>
+      <li class="delivery">Mangalore</li>
+      <li class="delivery">Hubli</li>
+      <li class="delivery">Kundapura</li>
+      <li class="delivery">Kalburgi</li>
+      <li class="delivery">Belgaum</li>
+      <li class="delivery">Hooghly</li>
+    </ul>
+   </div>
+      
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="https://furniture.com/">furniture.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+</html>
